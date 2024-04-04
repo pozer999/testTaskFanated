@@ -11,6 +11,9 @@ async function getListCurrencies(url){
     let row = document.createElement('tr');
     row.innerHTML = `<td>${result[i].id}</td><td>${result[i].symbol}</td><td>${result[i].name}</td>`;
     table.appendChild(row);
+    if(result[i].symbol === 'usdt') {
+        row.style.backgroundColor = 'green';
+    }
 }
     } else {
       console.log("Error: " + response.status);
