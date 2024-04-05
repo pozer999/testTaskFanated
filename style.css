@@ -1,19 +1,48 @@
-table{
-    border: 2px solid black;
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 th,
 td {
   border: 1px solid rgb(160 160 160);
   padding: 8px 10px;
 }
-tr:nth-child(-n+5){
-    background-color: rgb(51, 51, 252);
+tr:nth-child(-n + 5) {
+  background-color: rgb(51, 135, 252);
 }
-thead th{
-    background-color: rgb(228 240 245);
-  }
+thead th {
+  background-color: rgb(228 240 245);
+}
+.bi-search{
+  color: orange
+}
+.accountBtn{
+  width: 150px;
+}
+.dropdown-toggle::after{
+  margin-left: 30px !important;
+  color: orange;
+}
+.сhevron::after{
+  display: none !important;
+} 
+.bi-chevron-down{
+  color: orange;
+  margin-left: 50px;
+}
+.input-group-text{
+  background-color: transparent !important;
+  border-right: none !important;
+}
+.form-control {
+  border-left: none !important;
+}
