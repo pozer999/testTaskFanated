@@ -5,7 +5,8 @@
   margin: 0;
 }
 .row{
-  margin: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 table {
   border: 2px solid black;
@@ -70,4 +71,44 @@ thead th {
 }
 #auth {
   border: 2px solid #FDD446;
+}
+
+footer{ 
+  background-color: #FDD446;
+}
+.list-group li {
+  font-size: 18px;
+  margin-top: 30px;
+}
+b {
+  font-size: 20px;
+  padding: 0 !important;
+}
+#socials{
+  margin-top: 10px;
+}
+#socials img {
+  height: 20px;
+  width: auto;
+}
+#footer_company {
+  margin-top: 20px;
+  color: #00000080;
+}
+#pagin {
+  margin-top: 20px;
+}
+.page-link{
+  font-weight: 700;
+  color: black !important;
+  border: none !important;
+}
+.active>.page-link{
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: #FDD446 !important;
+}
+.gridDiv {
+  margin: 0 auto;
 }
