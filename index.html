@@ -20,10 +20,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+        <script defer src="./validationForm.js"></script>
         <title>Fanated</title>
     </head>
     <body>
-        <!-- <section id="firstTask">
+        <section id="firstTask">
       <h2>1. Список валют</h2>
       <table>
         <thead>
@@ -35,7 +36,7 @@
         </thead>
         <tbody id="tbody"></tbody>
       </table>
-    </section> -->
+    </section>
         <section id="secondTask">
             <h2>2. Макет фигма</h2>
             <div class="row d-grid gap-5">
@@ -64,7 +65,7 @@
                                     <button type="button" class="btn text-dark rounded-pill accountBtn" id="auth"><b>Вход</b></button>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn text-dark rounded-pill accountBtn" id="registr"><b>Регистрация</b></button>
+                                    <button type="button" class="btn text-dark rounded-pill accountBtn" id="registr" style="padding: 10px;"><b>Регистрация</b></button>
                                 </div>
                             </div>
                         </div>
@@ -140,6 +141,48 @@
             </footer>
         </section>
 
-        <section id="thirdTask"></section>
+        <h2>3. Форма регистрации</h2>
+        <section id="thirdTask" style="display: flex; justify-content: center; margin-bottom: 200px;">
+            
+            <form id="registrationForm">
+                <div class="inputGroup">
+                <label for="firstName">Имя:</label><br>
+                <input type="text" id="firstName" name="firstName" class="formInput"><br>
+                <i id="errorFirst" class="error"></i>
+                </div>
+
+                <div class="inputGroup">
+                <label for="lastName">Фамилия:</label><br>
+                <input type="text" id="lastName" name="lastName" class="formInput"><br>
+                <i id="errorLast" class="error"></i>
+            </div>
+
+            <div class="inputGroup">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <i id="errorEmail" class="error"></i>
+</div>
+                <div class="inputGroup">
+                <label for="password">Пароль:</label><br>
+                <input type="password" id="password" name="password" class="formInput"><br>
+                <i id="errorPassword" class="error"></i>
+            </div>
+
+            <div class="inputGroup">
+                <label for="confirmPassword">Подтверждение пароля:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="formInput"><br>
+                <i id="errorConfirm" class="error"></i>
+            </div>
+
+            <div class="inputGroup">
+                <label for="date">Дата рождения:</label><br>
+                <input type="date" id="date" name="date" class="formInput"><br>
+                <i id="errorDate" class="error"></i>
+         </div>
+            <div class="inputGroup">
+                <button type="submit" id="submitButton" disabled style="width: 100%;">Отправить</button>
+                </div>
+            </form>
+        </section>
     </body>
 </html>
