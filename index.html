@@ -24,19 +24,34 @@
         <title>Fanated</title>
     </head>
     <body>
+        <header id="topHeader">
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#firstTask">1. Список валют</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#secondTask">2. Макет фигма</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thirdTask">3. Форма регистрации</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section id="firstTask">
-      <h2>1. Список валют</h2>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">symbol</th>
-            <th scope="col">name</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </section>
+            <h2>1. Список валют</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">symbol</th>
+                        <th scope="col">name</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </section>
         <section id="secondTask">
             <h2>2. Макет фигма</h2>
             <div class="row d-grid gap-5">
@@ -65,7 +80,9 @@
                                     <button type="button" class="btn text-dark rounded-pill accountBtn" id="auth"><b>Вход</b></button>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn text-dark rounded-pill accountBtn" id="registr" style="padding: 10px;"><b>Регистрация</b></button>
+                                    <button type="button" class="btn text-dark rounded-pill accountBtn" id="registr" style="padding: 10px">
+                                        <b>Регистрация</b>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +98,7 @@
                         </button>
                     </div>
                 </nav>
-                    <div class="row gap-4 justify-content-center" id="gridCards"></div>
+                <div class="row gap-4 justify-content-center" id="gridCards"></div>
             </div>
 
             <nav aria-label="Пример навигации по страницам" class="justify-content-center d-grid" id="pagin">
@@ -104,7 +121,7 @@
                 </ul>
             </nav>
 
-            <footer style="margin-top: 80px; padding: 40px 40px 0 40px">
+            <footer>
                 <div class="row-10 justify-content-between d-flex">
                     <div class="col-3">
                         <ul class="list-group list-group-flush">
@@ -133,57 +150,56 @@
                     <img src="./img/image 3.png" alt="" />
                 </div>
                 <div class="justify-content-center d-flex">
-                    <img src="./img/Vector 2 1.png" alt="">
+                    <img src="./img/Vector 2 1.png" alt="" />
                 </div>
                 <div class="justify-content-center d-flex">
                     <p id="footer_company">@ tnft.ru Company, Inc</p>
                 </div>
             </footer>
-            <div id="circle_1"></div>
-            <div id="circle_2"></div>
-            <div id="circle_3"></div>
+            <div id="circle_1" class="circles"></div>
+            <div id="circle_2" class="circles"></div>
+            <div id="circle_3" class="circles"></div>
         </section>
 
         <h2>3. Форма регистрации</h2>
-        <section id="thirdTask" style="margin-bottom: 200px;">
-            
-            <form id="registrationForm" style="width: max-content;">
+        <section id="thirdTask" style="margin-bottom: 200px">
+            <form id="registrationForm" style="width: max-content">
                 <div class="inputGroup">
-                <label for="firstName">Имя:</label><br>
-                <input type="text" id="firstName" name="firstName" class="formInput"><br>
-                <i id="errorFirst" class="error"></i>
+                    <label for="firstName">Имя:</label><br />
+                    <input type="text" id="firstName" name="firstName" class="formInput" /><br />
+                    <i id="errorFirst" class="error"></i>
                 </div>
 
                 <div class="inputGroup">
-                <label for="lastName">Фамилия:</label><br>
-                <input type="text" id="lastName" name="lastName" class="formInput"><br>
-                <i id="errorLast" class="error"></i>
-            </div>
+                    <label for="lastName">Фамилия:</label><br />
+                    <input type="text" id="lastName" name="lastName" class="formInput" /><br />
+                    <i id="errorLast" class="error"></i>
+                </div>
 
-            <div class="inputGroup">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <i id="errorEmail" class="error"></i>
-</div>
                 <div class="inputGroup">
-                <label for="password">Пароль:</label><br>
-                <input type="password" id="password" name="password" class="formInput"><br>
-                <i id="errorPassword" class="error"></i>
-            </div>
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" /><br />
+                    <i id="errorEmail" class="error"></i>
+                </div>
+                <div class="inputGroup">
+                    <label for="password">Пароль:</label><br />
+                    <input type="password" id="password" name="password" class="formInput" /><br />
+                    <i id="errorPassword" class="error"></i>
+                </div>
 
-            <div class="inputGroup">
-                <label for="confirmPassword">Подтверждение пароля:</label><br>
-                <input type="password" id="confirmPassword" name="confirmPassword" class="formInput"><br>
-                <i id="errorConfirm" class="error"></i>
-            </div>
+                <div class="inputGroup">
+                    <label for="confirmPassword">Подтверждение пароля:</label><br />
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="formInput" /><br />
+                    <i id="errorConfirm" class="error"></i>
+                </div>
 
-            <div class="inputGroup">
-                <label for="date">Дата рождения:</label><br>
-                <input type="date" id="date" name="date" class="formInput"><br>
-                <i id="errorDate" class="error"></i>
-         </div>
-            <div class="inputGroup">
-                <button type="submit" id="submitButton" disabled style="width: 100%;">Отправить</button>
+                <div class="inputGroup">
+                    <label for="date">Дата рождения:</label><br />
+                    <input type="date" id="date" name="date" class="formInput" style="width: 222px" /><br />
+                    <i id="errorDate" class="error"></i>
+                </div>
+                <div class="inputGroup">
+                    <button type="submit" id="submitButton" disabled style="width: 222px">Отправить</button>
                 </div>
             </form>
         </section>

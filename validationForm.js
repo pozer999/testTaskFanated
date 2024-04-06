@@ -7,11 +7,6 @@ const confirmPassword = document.getElementById("confirmPassword");
 const date = document.getElementById("date");
 const submitButton = document.getElementById("submitButton");
 
-// let errorFirst = document.getElementById('errorFirst');
-//     let errors = {
-//         'Имя должно содержать только символы и быть не менее 2 символов в длину': false
-// };
-
 firstName.onblur = function () {
     if (!/^[a-zA-Z]+$/.test(firstName.value) || firstName.value.length < 2) {
         firstName.classList.add("invalid");
